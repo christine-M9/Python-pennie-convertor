@@ -1,3 +1,4 @@
+# define a function 
 def convert_pennies(value):
     # Constants representing the value of each coin/bill in pennies
     twenties_value = 20 * 100
@@ -32,10 +33,11 @@ def convert_pennies(value):
 
     pennies = value
 
-    # Display the results
-    print(f"{value} is equal to:")
+    # Print 
+    print(f"{pennies_value} pennies is equal to:")
     print(f"{twenties} twenties, {tens} tens, {fives} fives, {dollars} dollars, {quarters} quarters, {dimes} dimes, {nickels} nickels, {pennies} pennies")
 
-# Accept input from the user
+
+# User keyboard input
 pennies_value = int(input("Enter a value as a number of pennies: "))
 convert_pennies(pennies_value)
