@@ -1,42 +1,45 @@
+
+#define a function
 def convert_pennies(amount):
-    # Constants representing the value of each coin/bill in pennies
-    twenties_value = 20 * 100
-    tens_value = 10 * 100
-    fives_value = 5 * 100
-    dollars_value = 100
-    quarters_value = 25
-    dimes_value = 10
-    nickels_value = 5
 
-    # Calculate the number of each coin/bill
-    twenties = amount // twenties_value
-    amount %= twenties_value
+#define constants for each coins value   
+    twenties_calc = 20 * 100
+    tens_calc = 10 * 100
+    fives_calc = 5 * 100
+    dollars_calc = 100
+    quarters_calc = 25
+    dimes_calc = 10
+    nickels_calc = 5
 
-    tens = amount // tens_value
-    amount %= tens_value
+#each coins number
+    twenties = amount // twenties_calc
+    amount %= twenties_calc
 
-    fives = amount // fives_value
-    amount %= fives_value
+    tens = amount // tens_calc
+    amount %= tens_calc
 
-    dollars = amount // dollars_value
-    amount %= dollars_value
+    fives = amount // fives_calc
+    amount %= fives_calc
 
-    quarters = amount // quarters_value
-    amount %= quarters_value
+    dollars = amount // dollars_calc
+    amount %= dollars_calc
 
-    dimes = amount // dimes_value
-    amount %= dimes_value
+    quarters = amount // quarters_calc
+    amount %= quarters_calc
 
-    nickels = amount // nickels_value
-    amount %= nickels_value
+    dimes = amount // dimes_calc
+    amount %= dimes_calc
+
+    nickels = amount // nickels_calc
+    amount %= nickels_calc
 
     pennies = amount
 
     # Print
-    print(f"{pennies_value} pennies is equal to:")
+    print(f"{pennies_number} pennies is equal to:")
     print(f"{twenties} twenties, {tens} tens, {fives} fives, {dollars} dollars, {quarters} quarters, {dimes} dimes, {nickels} nickels, {pennies} pennies")
 
 
-# User keyboard input
-pennies_value = int(input("Enter a value as a number of pennies: "))
-convert_pennies(pennies_value)
+# User input
+pennies_number = int(input("Enter a value as a number of pennies: "))
+convert_pennies(pennies_number)
